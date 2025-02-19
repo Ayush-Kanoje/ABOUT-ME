@@ -1,0 +1,88 @@
+:root{
+    --bgcolor:#181828;
+    --vavcolor: #7054c3;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bgcolor);
+  
+}
+
+.me {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0;
+    color: white;
+    background-color: var(--vavcolor);
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    margin-top: 10vh;
+    width: 35vw;
+}
+
+.me h1{
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 18px;
+    color: white;
+    background-color: var(--vavcolor);
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    font-family: "Poppins", serif;
+    font-weight:bolder;
+    font-style:italic;
+    margin-left: 7vw ;
+    
+}
+
+.portfolio #self{
+    margin-top: 31vh;
+    margin-right: 10vw;
+    width: 30vw;
+    height: 52vh;
+    float: right;
+    border-radius: 350px;
+    border: 5px solid var(--vavcolor);
+
+
+}
+
+.about p {
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight:200;
+    font-style:normal;
+    width: 35vw;
+    height: 50vh;
+    margin-top: 5vh;
+    margin-left: 8vw;
+
+}
+
+.contact h1 {
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style:italic;
+    width: 35vw;
+    margin-top: 25vh;
+    margin-left: 8vw;
+
+}
+
+.contact img{
+    width: 3vw;
+    height: auto;
+    background-color: var(--vavcolor);
+    border-radius: 100%;
+    margin-top: 5vh;
+    margin-left: 8vw;
+}
+
+.contact #email{
+    display: flex;
+    flex-direction: row;
+}
