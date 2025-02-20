@@ -1,6 +1,7 @@
 :root{
     --bgcolor:#181828;
     --vavcolor: #7054c3;
+    --fontstyle: "Poppins", serif;
 }
 
 
@@ -31,7 +32,7 @@
     background-color: var(--vavcolor);
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
-    font-family: "Poppins", serif;
+    font-family: var(--fontstyle) ;
     font-weight:bolder;
     font-style:italic;
     margin-left: 7vw ;
@@ -52,7 +53,7 @@
 
 .about p {
     color: white;
-    font-family: "Poppins", serif;
+    font-family: var(--fontstyle);
     font-weight:200;
     font-style:normal;
     width: 35vw;
@@ -64,16 +65,25 @@
 
 .contact h1 {
     color: white;
-    font-family: "Poppins", serif;
+    font-family: var(--fontstyle);
     font-weight: 500;
     font-style:italic;
-    width: 35vw;
     margin-top: 25vh;
     margin-left: 8vw;
 
 }
 
-.contact img{
+.contact #linkedin ,#email{
+    width: 3vw;
+    height: auto;
+    background-color: var(--vavcolor);
+    border-radius: 100%;
+    margin-top: 5vh;
+    margin-left: 8vw;
+    
+}
+
+.contact #insta {
     width: 3vw;
     height: auto;
     background-color: var(--vavcolor);
@@ -82,7 +92,3 @@
     margin-left: 8vw;
 }
 
-.contact #email{
-    display: flex;
-    flex-direction: row;
-}

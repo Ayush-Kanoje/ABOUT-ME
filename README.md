@@ -1,2 +1,3 @@
 # ABOUT-ME
-MY OGING JOURNEY 
+
+MY OGING JOURNEY (Not complete yet)
