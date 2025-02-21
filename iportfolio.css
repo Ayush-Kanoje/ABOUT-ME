@@ -73,22 +73,20 @@
 
 }
 
-.contact #linkedin ,#email{
+.contact img{
     width: 3vw;
-    height: auto;
+    height: 5vh;
     background-color: var(--vavcolor);
     border-radius: 100%;
-    margin-top: 5vh;
     margin-left: 8vw;
     
 }
 
-.contact #insta {
-    width: 3vw;
-    height: auto;
-    background-color: var(--vavcolor);
-    border-radius: 100%;
-    margin-top: 5vh;
-    margin-left: 8vw;
+
+.contact #email{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+
 }
 
