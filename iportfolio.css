@@ -1,6 +1,6 @@
 :root{
     --bgcolor:#181828;
-    --vavcolor: #7054c3;
+    --color: #7054c3;
     --fontstyle: "Poppins", serif;
 }
 
@@ -17,7 +17,7 @@
     display: inline-block;
     padding: 0;
     color: white;
-    background-color: var(--vavcolor);
+    background-color: var(--color);
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
     margin-top: 10vh;
@@ -29,7 +29,7 @@
     display: inline-block;
     padding: 18px;
     color: white;
-    background-color: var(--vavcolor);
+    background-color: var(--color);
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
     font-family: var(--fontstyle) ;
@@ -46,7 +46,7 @@
     height: 52vh;
     float: right;
     border-radius: 350px;
-    border: 5px solid var(--vavcolor);
+    border: 5px solid var(--color);
 
 
 }
@@ -70,28 +70,62 @@
     font-style:italic;
     margin-top: 25vh;
     margin-left: 8vw;
+    font-size: 50px;
 
 }
+
+
 
 .contact img{
+    margin-top: 3vh;
     width: 3vw;
     height: 5vh;
-    background-color: var(--vavcolor);
+    background-color: var(--color);
     border-radius: 100%;
     margin-left: 8vw;
-    
+
 }
 
+.contact{
+    margin-bottom: 55px;
+}
 
-.contact #email{
-    display: flex;
-    flex-direction: column;
-    margin-top: 3vh;
-    
+.contact h3{
+    height: auto;
+    font-size: 25px;
+    color:white;
+    font-family: var(--fontstyle);
+    font-weight: 200;
+    margin-left: 12vw;
+    margin-top: -48px;
+
 }
-.contact #insta{
-   display: flex;
-   flex-direction: column;
-    
+
+.linkedin:hover{
+    background: var(--color);
+    text-align: center;
+    width: 12vw;
+    border: 1px solid none;
+    border-radius: 25px;
+
 }
+
+.insta:hover{
+    background: var(--color);
+    text-align: center;
+    width: 8vw;
+    border: 1px solid none;
+    border-radius: 25px;
+
+}
+
+.email:hover{
+    background: var(--color);
+    text-align: center;
+    width: 25vw;
+    border: 1px solid none;
+    border-radius: 25px;
+
+}
+
 
