@@ -2,6 +2,8 @@
   --bgcolor: #181828;
   --color: #7054c3;
   --fontstyle: "Poppins", serif;
+  --whitecolor: white;
+
 }
 
 * {
@@ -20,6 +22,8 @@
   border-bottom-right-radius: 80px;
   margin-top: 10vh;
   width: 33vw;
+  box-shadow: 3px 3px 3px var(--color), /* Bottom-right shadow */
+  -3px -3px 5px var(--color); /* Top-left highlight */
 }
 
 .me h1 {
@@ -34,6 +38,7 @@
   font-weight: bolder;
   font-style: italic;
   margin-left: 7vw;
+
 }
 
 .portfolio #self {
@@ -43,13 +48,24 @@
   height: 52vh;
   float: right;
   border-radius: 350px;
-  border: 5px solid var(--color);
+transition: 0.3s ease; 
 }
+
+#self:hover {
+  transition: 0.3s ease;
+  box-shadow: 
+  0 0 15px var(--whitecolor), /* Stronger outer glow */
+  0 0 30px var(--whitecolor), /* Stronger outer glow */
+  inset 0 0 15px rgba(255, 255, 255, 0.7), /* Stronger inner glow */
+  inset 0 0 30px rgba(255, 255, 255, 0.5); /* Stronger inner glow */
+  transform: translateY(-10px)
+}
+
 
 .about p {
   color: white;
   font-family: var(--fontstyle);
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
   width: 35vw;
   height: 50vh;
@@ -60,12 +76,25 @@
 .contact {
   width: 31vw;
   height: 38vh;
-  border: 5px solid var(--color);
-  background-color: var(--color);
-  margin: 8vw;
-  display: flex;
-  flex-direction: column;
+  margin-left: 8vw;
+  margin-top: 15vh;
+  background: var(--color);
+  border-radius: 25px;
+  margin-bottom: 15px;
+  position: relative;
+  transition: 0.4s ease; /* Smooth transition */
 }
+
+/* Add a hover effect to enhance the 3D shadow */
+.contact:hover {
+  border-radius: 25px;
+  box-shadow: 
+    0 8px 20px var(--color), /* Deeper shadow for lifted effect */
+    0 0 15px var(--whitecolor), /* Stronger glow */
+    0 0 30px var(--whitecolor); /* Even stronger glow */
+  transform: translateY(-10px); /* Lift the card slightly */
+}
+
 
 .contact h1 {
   color: white;
@@ -73,16 +102,22 @@
   font-weight: 500;
   font-style: italic;
   font-size: 50px;
-  margin-left: 8px;
+  margin-left: 10px;
+  background-color: var(--color);
+  border-radius: 35px;
+  padding-bottom:0;
+  padding-top: 3px;
 }
 
 .contact img {
-  margin-top: 3vh;
   width: 3vw;
   height: 5vh;
   background-color: var(--color);
-  border-radius: 100%;
-  margin-left: 35px;
+  display: grid;
+  border-radius: 25px;
+  padding-left: 36px;
+  padding-top: 25px;
+  
 }
 
 .contact h3 {
@@ -93,25 +128,41 @@
   font-weight: 300;
   margin-top: -48px;
   margin-left: 110px;
+  border-radius: 25px;
+  background-color: var(--color);
 }
 
 .linkedin:hover {
-  background: var(--color);
+  background:#007ab9;
   width: 12vw;
+  font-weight:300;
   border-radius: 25px;
   text-align: center;
 }
 
+.github:hover{
+  background-color: white;
+  color: black;
+  font-weight:300;
+  text-align: center;
+  width: 13vw;
+  border-radius: 25px;
+}
+
 .insta:hover {
-  background: var(--color);
+  background: linear-gradient(90deg, #856337, #b59659,#e56969,#c1558b,#8a49a1);
   width: 8vw;
+  font-weight: 300;
   border-radius: 25px;
   text-align: center;
 }
 
 .email:hover {
-  background: var(--color);
+  background: #ffc107;
   text-align: center;
   width: 23vw;
   border-radius: 25px;
+  font-weight:500;
 }
+
+
