@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Include Three.js and Vanta.js -->
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
   </head>
@@ -27,57 +27,60 @@
     <!-- Container for Vanta.js background -->
     <div id="vanta-background">
 
-    <!-- Your content -->
-    <div class="portfolio">
-      <img id="self" src="My Image.jpg" alt="ME" />
-      <div class="me">
-        <h1>About Me</h1>
-      </div>
-      <div class="about">
-        <p>
-          Hey everyone! 👋 <br /><br />
-          I’m currently on an exciting journey to build a career in the software
-          and IT sector. Right now, I’m diving deep into web development while
-          exploring other technologies to grow my skills across multiple fields.
-          I believe in diversifying my knowledge to stay adaptable and
-          innovative. <br /><br />
-          Alongside that, I’m challenging myself by solving Data Structures and
-          Algorithms (DSA) problems to strengthen my problem-solving abilities.
-          <br /><br />
-          I believe in consistent growth and hands-on practice to build a strong
-          foundation for my future in tech. With my graduation set for 2027, I
-          am excited to keep exploring, learning, and improving every day. Let’s
-          connect and grow together in this amazing tech world! 🚀💻"
-        </p>
-      </div>
+    
+      <div class="portfolio">
+        <div class="me">
+          <h1>About Me</h1>
+        </div>
+        <img id="self" src="me2.jpg" alt="ME" />
+        <div class="about">
+          <p>
+            Hey everyone! 👋 <br /><br />
+            I’m currently on an exciting journey to build a career in the
+            software and IT sector. Right now, I’m diving deep into web
+            development while exploring other technologies to grow my skills
+            across multiple fields. I believe in diversifying my knowledge to
+            stay adaptable and innovative. <br /><br />
+            Alongside that, I’m challenging myself by solving Data Structures
+            and Algorithms (DSA) problems to strengthen my problem-solving
+            abilities.
+            <br /><br />
+            I believe in consistent growth and hands-on practice to build a
+            strong foundation for my future in tech. With my graduation set for
+            2027, I am excited to keep exploring, learning, and improving every
+            day. Let’s connect and grow together in this amazing tech world!
+            🚀💻"
+          </p>
+        </div>
 
-      <div class="contact">
-        <h1>Contact</h1>
+        <div class="contact">
+          <h1>Contact</h1>
 
-        <a href="https://www.linkedin.com/in/ayushkanoje11/"
-          ><img src="linkedin.png" alt="linkedin-img" />
-          <h3 class="linkedin">Ayush Kanoje</h3></a
-        >
+          <a href="https://www.linkedin.com/in/ayushkanoje11/"
+            ><img class="flip-img" src="linkedin.png" alt="linkedin-img" />
+            <h3 class="linkedin">Ayush Kanoje</h3></a
+          >
 
-        <a href="https://github.com/Ayush-Kanoje"
-          ><img src="github.png" alt="my githb" />
-          <h3 class="github">Ayush-Kanoje</h3></a
-        >
+          <a href="https://github.com/Ayush-Kanoje"
+            ><img class="flip-img" src="github.png" alt="my githb" />
+            <h3 class="github">Ayush-Kanoje</h3></a
+          >
 
-        <a href="https://www.instagram.com/ayuxh.k11/"
-          ><img src="instagram.png" alt="instagram-img" />
-          <h3 class="insta">Ayuxh.k11</h3></a
-        >
+          <a href="https://www.instagram.com/ayuxh.k11/"
+            ><img class="flip-img" src="instagram.png" alt="instagram-img" />
+            <h3 class="insta">Ayuxh.k11</h3></a
+          >
 
-        <img src="email.png" alt="email-img" />
-        <h3 class="email">ayushkanoje056@gmail.com</h3>
+          <img class="flip-img" src="email.png" alt="email-img" />
+          <h3 class="email">ayushkanoje056@gmail.com</h3>
+        </div>
       </div>
     </div>
-  </div>
+
     <!-- Initialize Vanta.js -->
     <script>
       VANTA.NET({
-        el: "#vanta-background", // Target the Vanta.js container
+        el: "#vanta-background", 
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
@@ -85,10 +88,9 @@
         minWidth: 200.0,
         scale: 1.0,
         scaleMobile: 1.0,
-        color: 0x8a44ff, // Purple color
-        backgroundColor: 0x17052e, // Dark background color
+        color: 0x8a44ff, 
+        backgroundColor: 0x17052e, 
       });
     </script>
-  
   </body>
 </html>

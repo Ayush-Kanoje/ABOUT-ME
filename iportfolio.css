@@ -11,6 +11,10 @@
   padding: 0;
 }
 
+::selection{
+  color: aqua;
+  background-color: #181828;
+}
 
 .me {
   box-sizing: border-box;
@@ -57,9 +61,13 @@ transition: 0.3s ease;
   0 0 30px var(--whitecolor), /* Stronger outer glow */
   inset 0 0 25px rgba(255, 255, 255, 0.7), /* Stronger inner glow */
   inset 0 0 35px rgba(255, 255, 255, 0.5); /* Stronger inner glow */
-  transform: translateY(-10px)
-}
+  transform: translateY(-10px);
+  animation: flip 7s infinite; /* Flip animation for self image */
+  background-color: none;
+  background: none;
+  padding: 20px;
 
+}
 
 .about p {
   color: white;
@@ -70,6 +78,7 @@ transition: 0.3s ease;
   height: 50vh;
   margin-top: 10vh;
   margin-left: 8vw;
+  display: inline-block;
 }
 
 .contact {
@@ -88,10 +97,10 @@ transition: 0.3s ease;
 .contact:hover {
   border-radius: 25px;
   box-shadow: 
-    0 8px 20px var(--color), /* Deeper shadow for lifted effect */
-    0 0 15px var(--whitecolor), /* Stronger glow */
-    0 0 30px var(--whitecolor); /* Even stronger glow */
-  transform: translateY(-10px); /* Lift the card slightly */
+    0 8px 20px var(--color), 
+    0 0 15px var(--whitecolor), 
+    0 0 30px var(--whitecolor); 
+  transform: translateY(-10px); 
   transition:0.3s ease-in-out;
 }
 
@@ -109,7 +118,7 @@ transition: 0.3s ease;
   padding-top: 3px;
 }
 
-.contact img {
+.contact img{
   width: 3vw;
   height: 5vh;
   background-color: var(--color);
@@ -117,9 +126,42 @@ transition: 0.3s ease;
   border-radius: 25px;
   padding-left: 36px;
   padding-top: 25px;
+  
+}
+
+
+@keyframes flip {
+  0% {
+    transform: scaleX(1);
+  }
+  
+  20% {
+    transform: scaleX(-1);
+  }
+  40% {
+    transform: scaleX(1);
+  }
+  60% {
+    transform: scaleX(-1);
+  }
+  
+  80% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(-1);
+  }
 
 }
 
+.flip-img:hover{      /* flip-animation for contact images */
+  animation: flip 5s infinite;   
+  background-color: none;
+  background: none;
+  padding-left: 36px;
+  padding-top: 25px;
+
+}
 
 
 .contact h3 {
@@ -167,5 +209,105 @@ transition: 0.3s ease;
   font-weight:500;
 }
 
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+  .me {
+    width: 80vw;
+    margin-top: 5vh;
+  }
 
+  .me h1 {
+    font-size: 24px;
+    margin-left: 5vw;
+  }
+
+  .portfolio #self {
+    width: 60vw;
+    height: auto;
+    margin-top: 10vh;
+    margin-right: 5vw;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about p {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    font-size: 14px;
+  }
+
+  .contact {
+    width: 80vw;
+    height: auto;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    padding-bottom: 20px;
+  }
+
+  .contact h1 {
+    font-size: 30px;
+  }
+
+  .contact img {
+    width: 8vw;
+    height: auto;
+  }
+
+  .contact h3 {
+    font-size: 18px;
+    margin-left: 80px;
+  }
+}
+
+/* Tablet Devices (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .me {
+    width: 50vw;
+    margin-top: 8vh;
+  }
+
+  .me h1 {
+    font-size: 28px;
+    margin-left: 5vw;
+  }
+
+  .portfolio #self {
+    width: 40vw;
+    height: auto;
+    margin-top: 20vh;
+    margin-right: 5vw;
+  }
+
+  .about p {
+    width: 50vw;
+    margin-left: 5vw;
+    margin-top: 8vh;
+    font-size: 16px;
+  }
+
+  .contact {
+    width: 50vw;
+    height: auto;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    padding-bottom: 20px;
+  }
+
+  .contact h1 {
+    font-size: 40px;
+  }
+
+  .contact img {
+    width: 5vw;
+    height: auto;
+  }
+
+  .contact h3 {
+    font-size: 20px;
+    margin-left: 90px;
+  }
+}
 
