@@ -18,8 +18,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Include Three.js and Vanta.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
   </head>
   <body>
+    <!-- Container for Vanta.js background -->
+    <div id="vanta-background">
+
+    <!-- Your content -->
     <div class="portfolio">
       <img id="self" src="My Image.jpg" alt="ME" />
       <div class="me">
@@ -63,8 +71,24 @@
 
         <img src="email.png" alt="email-img" />
         <h3 class="email">ayushkanoje056@gmail.com</h3>
-        
       </div>
     </div>
+  </div>
+    <!-- Initialize Vanta.js -->
+    <script>
+      VANTA.NET({
+        el: "#vanta-background", // Target the Vanta.js container
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x8a44ff, // Purple color
+        backgroundColor: 0x17052e, // Dark background color
+      });
+    </script>
+  
   </body>
 </html>

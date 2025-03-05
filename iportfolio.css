@@ -9,8 +9,8 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: var(--bgcolor);
 }
+
 
 .me {
   box-sizing: border-box;
@@ -22,8 +22,7 @@
   border-bottom-right-radius: 80px;
   margin-top: 10vh;
   width: 33vw;
-  box-shadow: 3px 3px 3px var(--color), /* Bottom-right shadow */
-  -3px -3px 5px var(--color); /* Top-left highlight */
+
 }
 
 .me h1 {
@@ -56,8 +55,8 @@ transition: 0.3s ease;
   box-shadow: 
   0 0 15px var(--whitecolor), /* Stronger outer glow */
   0 0 30px var(--whitecolor), /* Stronger outer glow */
-  inset 0 0 15px rgba(255, 255, 255, 0.7), /* Stronger inner glow */
-  inset 0 0 30px rgba(255, 255, 255, 0.5); /* Stronger inner glow */
+  inset 0 0 25px rgba(255, 255, 255, 0.7), /* Stronger inner glow */
+  inset 0 0 35px rgba(255, 255, 255, 0.5); /* Stronger inner glow */
   transform: translateY(-10px)
 }
 
@@ -82,10 +81,10 @@ transition: 0.3s ease;
   border-radius: 25px;
   margin-bottom: 15px;
   position: relative;
-  transition: 0.4s ease; /* Smooth transition */
+
 }
 
-/* Add a hover effect to enhance the 3D shadow */
+
 .contact:hover {
   border-radius: 25px;
   box-shadow: 
@@ -93,6 +92,7 @@ transition: 0.3s ease;
     0 0 15px var(--whitecolor), /* Stronger glow */
     0 0 30px var(--whitecolor); /* Even stronger glow */
   transform: translateY(-10px); /* Lift the card slightly */
+  transition:0.3s ease-in-out;
 }
 
 
