@@ -117,8 +117,10 @@ transition: 0.3s ease;
   border-radius: 25px;
   padding-left: 36px;
   padding-top: 25px;
-  
+
 }
+
+
 
 .contact h3 {
   height: auto;
@@ -164,5 +166,6 @@ transition: 0.3s ease;
   border-radius: 25px;
   font-weight:500;
 }
+
 
 
