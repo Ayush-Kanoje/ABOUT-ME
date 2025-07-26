@@ -1,96 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayush-Kanoje</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Kanoje - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">AK</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="circuit-pattern"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="typing-text" id="typing-name"></span>
+                </h1>
+                <p class="hero-subtitle">ETC+AI Engineer</p>
+                <p class="hero-description">Passionate about building smart solutions and exploring the intersection of electronics and artificial intelligence</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn--primary btn--lg">View My Work</a>
+                    <a href="#contact" class="btn btn--outline btn--lg">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-avatar">
+                <div class="profile-photo-container">
+                    <div class="circuit-border">
+                        <div class="circuit-line circuit-line-1"></div>
+                        <div class="circuit-line circuit-line-2"></div>
+                        <div class="circuit-line circuit-line-3"></div>
+                        <div class="circuit-line circuit-line-4"></div>
+                    </div>
+                    <div class="profile-photo">
+                        <div class="profile-placeholder">
+                            <!-- <i class="fas fa-user-tie"></i> -->
+                             <img src="WhatsApp Image 2025-07-26 at 12.26.03_3c9be0bf.jpg" alt="profile imgage" class="profile-image">
+                        </div>
+                        <div class="profile-glow"></div>
+                    </div>
+                    <div class="profile-status">
+                        <span class="status-text">Available for Opportunities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p class="about-summary">Passionate Engineering student specializing in Electronics & Telecommunication with AI focus. Currently in 5th semester at JIT Nagpur with strong academic record. Love building smart IoT solutions, web applications, and solving DSA problems.</p>
+                    <p class="fun-fact">💡 Fun fact: "I say 'errors are never a problem for me...' — then debug for 3 hours 😅"</p>
+                    <div class="currently-learning">
+                        <h4>Currently Learning:</h4>
+                        <div class="learning-tags">
+                            <span class="tag">Firebase</span>
+                            <span class="tag">C++ DSA</span>
+                            <span class="tag">Communication Skills</span>
+                            <span class="tag">AI/ML Concepts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="github-stats fade-in">
+                    <h4>GitHub Activity</h4>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">167</span>
+                            <span class="stat-label">Contributions</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">7</span>
+                            <span class="stat-label">Following</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title fade-in">Education</h2>
+            <div class="education-content">
+                <div class="education-main fade-in">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-info">
+                            <h3>B.Tech in Electronics & Telecommunication</h3>
+                            <h4>AI Specialization</h4>
+                            <p class="institution">Jhulelal Institute of Technology, Nagpur</p>
+                            <p class="duration">2023 - 2027 | Currently 5th Semester, 3rd Year</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cgpa-progression fade-in">
+                    <h4>Academic Performance</h4>
+                    <div class="cgpa-bars">
+                        <div class="cgpa-item">
+                            <div class="cgpa-info">
+                                <span>1st Year</span>
+                                <span class="cgpa-value">9.1</span>
+                            </div>
+                            <div class="cgpa-bar">
+                                <div class="cgpa-fill" data-cgpa="91"></div>
+                            </div>
+                        </div>
+                        <div class="cgpa-item">
+                            <div class="cgpa-info">
+                                <span>2nd Year</span>
+                                <span class="cgpa-value">8.8</span>
+                            </div>
+                            <div class="cgpa-bar">
+                                <div class="cgpa-fill" data-cgpa="88"></div>
+                            </div>
+                        </div>
+                        <div class="cgpa-item">
+                            <div class="cgpa-info">
+                                <span>3rd Year (5th Sem)</span>
+                                <span class="cgpa-value">8.86</span>
+                            </div>
+                            <div class="cgpa-bar">
+                                <div class="cgpa-fill" data-cgpa="88.6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="school-info fade-in">
+                    <h4>Previous Education</h4>
+                    <div class="school-grid">
+                        <div class="school-item">
+                            <span class="school-class">Class 10th</span>
+                            <span class="school-percentage">89%</span>
+                        </div>
+                        <div class="school-item">
+                            <span class="school-class">Class 12th (PCMB)</span>
+                            <span class="school-percentage">73%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title fade-in">Skills & Expertise</h2>
+            <div class="skills-content">
+                <div class="programming-skills fade-in">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-cuttlefish"></i>
+                            </div>
+                            <h4>C</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>C++</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4>HTML</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h4>CSS</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="learning-skills fade-in">
+                    <h3>Currently Learning</h3>
+                    <div class="learning-grid">
+                        <div class="learning-item">
+                            <span class="learning-name">Data Structures & Algorithms</span>
+                            <div class="learning-progress">
+                                <div class="learning-fill" data-level="60"></div>
+                            </div>
+                        </div>
+                        <div class="learning-item">
+                            <span class="learning-name">Firebase</span>
+                            <div class="learning-progress">
+                                <div class="learning-fill" data-level="50"></div>
+                            </div>
+                        </div>
+                        <div class="learning-item">
+                            <span class="learning-name">AI/ML Concepts</span>
+                            <div class="learning-progress">
+                                <div class="learning-fill" data-level="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="interests fade-in">
+                    <h3>Areas of Interest</h3>
+                    <div class="interests-tags">
+                        <span class="interest-tag">IoT Solutions</span>
+                        <span class="interest-tag">Web Development</span>
+                        <span class="interest-tag">Artificial Intelligence</span>
+                        <span class="interest-tag">Electronics Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in" data-category="Web Development">
+                    <div class="project-image">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Google Clone</h3>
+                        <p>Dynamic Google Clone with functional search that redirects to actual Google search results</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ayush-Kanoje/Google_Clone" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://ayush-kanoje.github.io/Google_Clone/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Web Development</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-category="IoT & Safety">
+                    <div class="project-image">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Wind Fire</h3>
+                        <p>Forest fire detection system using sensors and monitoring technology for safety applications</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">IoT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ayush-Kanoje/wind-fire" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://ayush-kanoje.github.io/wind-fire/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">IoT & Safety</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-category="Productivity">
+                    <div class="project-image">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Kanban System</h3>
+                        <p>Task management application for scheduling and managing daily tasks and upcoming events</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ayush-Kanoje/Kanban-System" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://ayush-kanoje.github.io/Kanban-System/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Productivity</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-category="Environmental">
+                    <div class="project-image">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>EcoSwap</h3>
+                        <p>Environmental sustainability project for eco-friendly item exchange and recycling</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ayush-Kanoje/EcoSwap" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Environmental</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-category="Web Development">
+                    <div class="project-image">
+                        <i class="fab fa-netflix"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Netflix Clone</h3>
+                        <p>Recreation of Netflix homepage before subscription with responsive design</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ayush-Kanoje/Netflix-Clone" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Web Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
-  </head>
-  <body>
-    
-    <!-- Container for Vanta.js background -->
-    <div id="vanta-background">
-
-      <div class="portfolio">
-        <div class="me">
-          <h1>About Me</h1>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3>Get in Touch</h3>
+                    <p>I'm always excited to connect with fellow developers, potential collaborators, and anyone interested in technology. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nagpur, Maharashtra</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ayuxh.k11@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Ayush-Kanoje" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ayushkanoje11/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <img id="self" src="me2.jpg" alt="ME" />
-        <div class="about">
-          <p>
-            Hey everyone! 👋 <br /><br />
-            I’m currently on an exciting journey to build a career in the
-            software and IT sector. Right now, I’m diving deep into web
-            development while exploring other technologies to grow my skills
-            across multiple fields. I believe in diversifying my knowledge to
-            stay adaptable and innovative. <br /><br />
-            Alongside that, I’m challenging myself by solving Data Structures
-            and Algorithms (DSA) problems to strengthen my problem-solving
-            abilities.
-            <br /><br />
-            I believe in consistent growth and hands-on practice to build a
-            strong foundation for my future in tech. With my graduation set for
-            2027, I am excited to keep exploring, learning, and improving every
-            day. Let’s connect and grow together in this amazing tech world!
-            🚀💻".
-          </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Ayush Kanoje. Built with passion for technology.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Ayush-Kanoje" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/ayushkanoje11/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
         </div>
+    </footer>
 
-        <div class="contact">
-          <h1>Contact</h1>
-
-          <a href="https://www.linkedin.com/in/ayushkanoje11/"
-            ><img class="flip-img" src="linkedin.png" alt="linkedin-img" />
-            <h3 class="linkedin">Ayush Kanoje</h3></a
-          >
-
-          <a href="https://github.com/Ayush-Kanoje"
-            ><img class="flip-img" src="github.png" alt="my githb" />
-            <h3 class="github">Ayush-Kanoje</h3></a
-          >
-
-          <a href="https://www.instagram.com/ayuxh.k11/"
-            ><img class="flip-img" src="instagram.png" alt="instagram-img" />
-            <h3 class="insta">Ayuxh.k11</h3></a
-          >
-
-          <img class="flip-img" src="email.png" alt="email-img" />
-          <h3 class="email">ayushkanoje056@gmail.com</h3>
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Certificate Details</h3>
+                <span class="modal-close" id="modalClose">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be populated by JavaScript -->
+            </div>
         </div>
-      </div>
     </div>
 
-    <!-- Initialize Vanta.js -->
-    <script>
-      VANTA.NET({
-        el: "#vanta-background", 
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0x8a44ff, 
-        backgroundColor: 0x17052e, 
-      });
-    </script>
-  </body>
+    <script src="app.js"></script>
+</body>
 </html>
